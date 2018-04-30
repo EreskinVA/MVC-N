@@ -14,6 +14,9 @@
 		F8A3F26620978DC6001DC708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A3F26420978DC6001DC708 /* LaunchScreen.storyboard */; };
 		F8A3F27720979192001DC708 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3F27620979192001DC708 /* CommentCell.swift */; };
 		F8A3F27920979288001DC708 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3F27820979288001DC708 /* Comment.swift */; };
+		F8A3F27C20979491001DC708 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3F27B20979491001DC708 /* NetworkService.swift */; };
+		F8A3F27F2097975C001DC708 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3F27E2097975C001DC708 /* CommentNetworkService.swift */; };
+		F8A3F2812097986F001DC708 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3F2802097986F001DC708 /* GetCommentResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		F8A3F26720978DC6001DC708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8A3F27620979192001DC708 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		F8A3F27820979288001DC708 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		F8A3F27B20979491001DC708 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F8A3F27E2097975C001DC708 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		F8A3F2802097986F001DC708 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 				F8A3F26D20978DF2001DC708 /* Model */,
 				F8A3F26E20978E0D001DC708 /* View */,
 				F8A3F26F20978E19001DC708 /* Controller */,
+				F8A3F27A2097945C001DC708 /* NetworkService */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -104,6 +111,7 @@
 				F8A3F27420978E87001DC708 /* Model */,
 				F8A3F27320978E80001DC708 /* View */,
 				F8A3F27220978E7A001DC708 /* Controller */,
+				F8A3F27D20979729001DC708 /* CommentNetworkService */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				F8A3F27820979288001DC708 /* Comment.swift */,
+				F8A3F2802097986F001DC708 /* GetCommentResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +149,22 @@
 				F8A3F26720978DC6001DC708 /* Info.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		F8A3F27A2097945C001DC708 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3F27B20979491001DC708 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		F8A3F27D20979729001DC708 /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3F27E2097975C001DC708 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A3F27C20979491001DC708 /* NetworkService.swift in Sources */,
 				F8A3F25E20978DC3001DC708 /* CommentsViewController.swift in Sources */,
 				F8A3F25C20978DC3001DC708 /* AppDelegate.swift in Sources */,
+				F8A3F2812097986F001DC708 /* GetCommentResponse.swift in Sources */,
 				F8A3F27720979192001DC708 /* CommentCell.swift in Sources */,
+				F8A3F27F2097975C001DC708 /* CommentNetworkService.swift in Sources */,
 				F8A3F27920979288001DC708 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
